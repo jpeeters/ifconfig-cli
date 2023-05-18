@@ -1,0 +1,8 @@
+[package]
+name = "domain"
+authors.workspace = true
+edition.workspace = true
+version.workspace = true
+
+[dependencies]
+serde = { version = "1.0.163", features = ["derive"] }
