@@ -10,5 +10,7 @@ path = "src/ifconfig/main.rs"
 
 [dependencies]
 app = { path = "../app" }
+async-trait = "0.1.68"
+ifconfig = { path = "../ifconfig" }
 serde_json = "1.0.96"
 tokio = { version = "1.28.1", features = ["macros", "libc", "process", "full"] }

@@ -11,6 +11,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "async-trait"
+version = "0.1.68"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b9ccdd8f2a161be9bd5c023df56f1b2a0bd1d83872ae53b71a84a12c9bf6e842"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "autocfg"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -57,6 +68,8 @@ name = "cmd"
 version = "0.1.0"
 dependencies = [
  "app",
+ "async-trait",
+ "ifconfig",
  "serde_json",
  "tokio",
 ]
@@ -81,6 +94,7 @@ checksum = "e496a50fda8aacccc86d7529e2c1e0892dbd0f898a6b5645b5561b89c3210efa"
 name = "domain"
 version = "0.1.0"
 dependencies = [
+ "async-trait",
  "serde",
 ]
 
@@ -311,6 +325,15 @@ checksum = "e14ddfc70884202db2244c223200c204c2bda1bc6e0998d11b5e024d657209e6"
 dependencies = [
  "unicode-bidi",
  "unicode-normalization",
+]
+
+[[package]]
+name = "ifconfig"
+version = "0.1.0"
+dependencies = [
+ "async-trait",
+ "domain",
+ "reqwest",
 ]
 
 [[package]]

@@ -5,4 +5,5 @@ edition.workspace = true
 version.workspace = true
 
 [dependencies]
+async-trait = "0.1.68"
 serde = { version = "1.0.163", features = ["derive"] }
