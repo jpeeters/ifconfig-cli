@@ -25,4 +25,6 @@ app/      (use cases) the applicative code that integrates all use cases and pro
 cmd/      (adapter) the command line code that provides decoding of options and calls
           the applicative code.
 domain/   (domain) the core of business types and interfaces (i.e. use cases).
+ifconfig/ (adapter) implementation to fetch ifconfig data from public API,
+          implementing the domain::Fetcher trait.
 ```
